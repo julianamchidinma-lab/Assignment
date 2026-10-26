@@ -1,0 +1,445 @@
+{
+    "1762925426223#foreignKey": [
+        {
+            "constraint_name": "employees_ibfk_1",
+            "table_schema": "id",
+            "table_name": "employees",
+            "column_name": "department_id",
+            "referenced_schema": "id",
+            "referenced_table": "departments",
+            "referenced_column": "id"
+        },
+        {
+            "constraint_name": "request_ibfk_1",
+            "table_schema": "id",
+            "table_name": "request",
+            "column_name": "employee_id",
+            "referenced_schema": "id",
+            "referenced_table": "employees",
+            "referenced_column": "id"
+        },
+        {
+            "constraint_name": "fk_address_city",
+            "table_schema": "sakila",
+            "table_name": "address",
+            "column_name": "city_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "city",
+            "referenced_column": "city_id"
+        },
+        {
+            "constraint_name": "fk_city_country",
+            "table_schema": "sakila",
+            "table_name": "city",
+            "column_name": "country_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "country",
+            "referenced_column": "country_id"
+        },
+        {
+            "constraint_name": "fk_customer_address",
+            "table_schema": "sakila",
+            "table_name": "customer",
+            "column_name": "address_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "address",
+            "referenced_column": "address_id"
+        },
+        {
+            "constraint_name": "fk_customer_store",
+            "table_schema": "sakila",
+            "table_name": "customer",
+            "column_name": "store_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "store",
+            "referenced_column": "store_id"
+        },
+        {
+            "constraint_name": "fk_film_language",
+            "table_schema": "sakila",
+            "table_name": "film",
+            "column_name": "language_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "language",
+            "referenced_column": "language_id"
+        },
+        {
+            "constraint_name": "fk_film_language_original",
+            "table_schema": "sakila",
+            "table_name": "film",
+            "column_name": "original_language_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "language",
+            "referenced_column": "language_id"
+        },
+        {
+            "constraint_name": "fk_film_actor_actor",
+            "table_schema": "sakila",
+            "table_name": "film_actor",
+            "column_name": "actor_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "actor",
+            "referenced_column": "actor_id"
+        },
+        {
+            "constraint_name": "fk_film_actor_film",
+            "table_schema": "sakila",
+            "table_name": "film_actor",
+            "column_name": "film_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "film",
+            "referenced_column": "film_id"
+        },
+        {
+            "constraint_name": "fk_film_category_category",
+            "table_schema": "sakila",
+            "table_name": "film_category",
+            "column_name": "category_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "category",
+            "referenced_column": "category_id"
+        },
+        {
+            "constraint_name": "fk_film_category_film",
+            "table_schema": "sakila",
+            "table_name": "film_category",
+            "column_name": "film_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "film",
+            "referenced_column": "film_id"
+        },
+        {
+            "constraint_name": "fk_inventory_film",
+            "table_schema": "sakila",
+            "table_name": "inventory",
+            "column_name": "film_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "film",
+            "referenced_column": "film_id"
+        },
+        {
+            "constraint_name": "fk_inventory_store",
+            "table_schema": "sakila",
+            "table_name": "inventory",
+            "column_name": "store_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "store",
+            "referenced_column": "store_id"
+        },
+        {
+            "constraint_name": "fk_payment_customer",
+            "table_schema": "sakila",
+            "table_name": "payment",
+            "column_name": "customer_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "customer",
+            "referenced_column": "customer_id"
+        },
+        {
+            "constraint_name": "fk_payment_rental",
+            "table_schema": "sakila",
+            "table_name": "payment",
+            "column_name": "rental_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "rental",
+            "referenced_column": "rental_id"
+        },
+        {
+            "constraint_name": "fk_payment_staff",
+            "table_schema": "sakila",
+            "table_name": "payment",
+            "column_name": "staff_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "staff",
+            "referenced_column": "staff_id"
+        },
+        {
+            "constraint_name": "fk_rental_customer",
+            "table_schema": "sakila",
+            "table_name": "rental",
+            "column_name": "customer_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "customer",
+            "referenced_column": "customer_id"
+        },
+        {
+            "constraint_name": "fk_rental_inventory",
+            "table_schema": "sakila",
+            "table_name": "rental",
+            "column_name": "inventory_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "inventory",
+            "referenced_column": "inventory_id"
+        },
+        {
+            "constraint_name": "fk_rental_staff",
+            "table_schema": "sakila",
+            "table_name": "rental",
+            "column_name": "staff_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "staff",
+            "referenced_column": "staff_id"
+        },
+        {
+            "constraint_name": "fk_staff_address",
+            "table_schema": "sakila",
+            "table_name": "staff",
+            "column_name": "address_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "address",
+            "referenced_column": "address_id"
+        },
+        {
+            "constraint_name": "fk_staff_store",
+            "table_schema": "sakila",
+            "table_name": "staff",
+            "column_name": "store_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "store",
+            "referenced_column": "store_id"
+        },
+        {
+            "constraint_name": "fk_store_address",
+            "table_schema": "sakila",
+            "table_name": "store",
+            "column_name": "address_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "address",
+            "referenced_column": "address_id"
+        },
+        {
+            "constraint_name": "fk_store_staff",
+            "table_schema": "sakila",
+            "table_name": "store",
+            "column_name": "manager_staff_id",
+            "referenced_schema": "sakila",
+            "referenced_table": "staff",
+            "referenced_column": "staff_id"
+        },
+        {
+            "constraint_name": "bill_detail_ibfk_1",
+            "table_schema": "school_db",
+            "table_name": "bill_detail",
+            "column_name": "bill_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "bill",
+            "referenced_column": "bill_id"
+        },
+        {
+            "constraint_name": "class_subjects_ibfk_1",
+            "table_schema": "school_db",
+            "table_name": "class_subjects",
+            "column_name": "class_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "class",
+            "referenced_column": "classid"
+        },
+        {
+            "constraint_name": "class_subjects_ibfk_2",
+            "table_schema": "school_db",
+            "table_name": "class_subjects",
+            "column_name": "subject_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "subjects",
+            "referenced_column": "sub_id"
+        },
+        {
+            "constraint_name": "payment_ibfk_1",
+            "table_schema": "school_db",
+            "table_name": "payment",
+            "column_name": "term_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "term",
+            "referenced_column": "termid"
+        },
+        {
+            "constraint_name": "payment_ibfk_2",
+            "table_schema": "school_db",
+            "table_name": "payment",
+            "column_name": "stu_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "student",
+            "referenced_column": "st_id"
+        },
+        {
+            "constraint_name": "payment_ibfk_3",
+            "table_schema": "school_db",
+            "table_name": "payment",
+            "column_name": "class_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "class",
+            "referenced_column": "classid"
+        },
+        {
+            "constraint_name": "payment_ibfk_4",
+            "table_schema": "school_db",
+            "table_name": "payment",
+            "column_name": "academicyear_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "academic",
+            "referenced_column": "year_id"
+        },
+        {
+            "constraint_name": "payment_ibfk_5",
+            "table_schema": "school_db",
+            "table_name": "payment",
+            "column_name": "group_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "groups",
+            "referenced_column": "group_id"
+        },
+        {
+            "constraint_name": "score_ibfk_1",
+            "table_schema": "school_db",
+            "table_name": "score",
+            "column_name": "subject_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "subjects",
+            "referenced_column": "sub_id"
+        },
+        {
+            "constraint_name": "score_ibfk_2",
+            "table_schema": "school_db",
+            "table_name": "score",
+            "column_name": "student_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "student",
+            "referenced_column": "st_id"
+        },
+        {
+            "constraint_name": "score_ibfk_3",
+            "table_schema": "school_db",
+            "table_name": "score",
+            "column_name": "academic_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "academic",
+            "referenced_column": "year_id"
+        },
+        {
+            "constraint_name": "score_ibfk_4",
+            "table_schema": "school_db",
+            "table_name": "score",
+            "column_name": "class_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "class",
+            "referenced_column": "classid"
+        },
+        {
+            "constraint_name": "score_ibfk_5",
+            "table_schema": "school_db",
+            "table_name": "score",
+            "column_name": "termid",
+            "referenced_schema": "school_db",
+            "referenced_table": "term",
+            "referenced_column": "termid"
+        },
+        {
+            "constraint_name": "score_ibfk_6",
+            "table_schema": "school_db",
+            "table_name": "score",
+            "column_name": "grade_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "groups",
+            "referenced_column": "group_id"
+        },
+        {
+            "constraint_name": "student_ibfk_1",
+            "table_schema": "school_db",
+            "table_name": "student",
+            "column_name": "classid",
+            "referenced_schema": "school_db",
+            "referenced_table": "class",
+            "referenced_column": "classid"
+        },
+        {
+            "constraint_name": "studentsissuedbills_ibfk_1",
+            "table_schema": "school_db",
+            "table_name": "studentsissuedbills",
+            "column_name": "bill_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "bill",
+            "referenced_column": "bill_id"
+        },
+        {
+            "constraint_name": "studentsissuedbills_ibfk_2",
+            "table_schema": "school_db",
+            "table_name": "studentsissuedbills",
+            "column_name": "classid",
+            "referenced_schema": "school_db",
+            "referenced_table": "class",
+            "referenced_column": "classid"
+        },
+        {
+            "constraint_name": "studentsissuedbills_ibfk_3",
+            "table_schema": "school_db",
+            "table_name": "studentsissuedbills",
+            "column_name": "stu_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "student",
+            "referenced_column": "st_id"
+        },
+        {
+            "constraint_name": "studentsissuedbills_ibfk_4",
+            "table_schema": "school_db",
+            "table_name": "studentsissuedbills",
+            "column_name": "term_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "term",
+            "referenced_column": "termid"
+        },
+        {
+            "constraint_name": "studentsissuedbills_ibfk_5",
+            "table_schema": "school_db",
+            "table_name": "studentsissuedbills",
+            "column_name": "group_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "groups",
+            "referenced_column": "group_id"
+        },
+        {
+            "constraint_name": "studentsissuedbills_ibfk_6",
+            "table_schema": "school_db",
+            "table_name": "studentsissuedbills",
+            "column_name": "academicyear_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "academic",
+            "referenced_column": "year_id"
+        },
+        {
+            "constraint_name": "teachers_ibfk_1",
+            "table_schema": "school_db",
+            "table_name": "teachers",
+            "column_name": "subject_id",
+            "referenced_schema": "school_db",
+            "referenced_table": "subjects",
+            "referenced_column": "sub_id"
+        },
+        {
+            "constraint_name": "term_ibfk_1",
+            "table_schema": "school_db",
+            "table_name": "term",
+            "column_name": "academic_yearid",
+            "referenced_schema": "school_db",
+            "referenced_table": "academic",
+            "referenced_column": "year_id"
+        },
+        {
+            "constraint_name": "city_ibfk_1",
+            "table_schema": "world",
+            "table_name": "city",
+            "column_name": "CountryCode",
+            "referenced_schema": "world",
+            "referenced_table": "country",
+            "referenced_column": "Code"
+        },
+        {
+            "constraint_name": "countryLanguage_ibfk_1",
+            "table_schema": "world",
+            "table_name": "countrylanguage",
+            "column_name": "CountryCode",
+            "referenced_schema": "world",
+            "referenced_table": "country",
+            "referenced_column": "Code"
+        }
+    ]
+}
